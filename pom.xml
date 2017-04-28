@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>scala-hmm</groupId>
   <artifactId>scala-hmm</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>Scala-HMM</name>
   <description>Scala implementation of a Hidden Markov Model.</description>
   <inceptionYear>2010</inceptionYear>
@@ -15,11 +15,11 @@
   </licenses>
 
   <properties>
-    <maven.compiler.source>1.6</maven.compiler.source>
-    <maven.compiler.target>1.6</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
     <encoding>UTF-8</encoding>
-    <scala.tools.version>2.10</scala.tools.version>
-    <scala.version>2.10.0</scala.version>
+    <scala.tools.version>2.11</scala.tools.version>
+    <scala.version>2.11.8</scala.version>
   </properties>
 
   <dependencies>
@@ -30,36 +30,41 @@
     </dependency>
 
     <!-- Test -->
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.11</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.specs2</groupId>
-      <artifactId>specs2_${scala.tools.version}</artifactId>
-      <version>1.13</version>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.scalatest</groupId>
-      <artifactId>scalatest_${scala.tools.version}</artifactId>
-      <version>2.0.M6-SNAP8</version>
-      <scope>test</scope>
-    </dependency>
+    <!--<dependency>-->
+      <!--<groupId>junit</groupId>-->
+      <!--<artifactId>junit</artifactId>-->
+      <!--<version>4.11</version>-->
+      <!--<scope>test</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.specs2</groupId>-->
+      <!--<artifactId>specs2_${scala.tools.version}</artifactId>-->
+      <!--<version>1.13</version>-->
+      <!--<scope>test</scope>-->
+    <!--</dependency>-->
+    <!--<dependency>-->
+      <!--<groupId>org.scalatest</groupId>-->
+      <!--<artifactId>scalatest_${scala.tools.version}</artifactId>-->
+      <!--<version>2.0.M6-SNAP8</version>-->
+      <!--<scope>test</scope>-->
+    <!--</dependency>-->
 
-    <dependency>
-	  <groupId>org.apache.mahout</groupId>
-	  <artifactId>mahout-math</artifactId>
-	  <version>0.9</version>
-    </dependency>    
-    
+    <!--<dependency>-->
+	  <!--<groupId>org.apache.mahout</groupId>-->
+	  <!--<artifactId>mahout-math</artifactId>-->
+	  <!--<version>0.9</version>-->
+    <!--</dependency>-->
+
+      <dependency>
+          <groupId>org.apache.mahout</groupId>
+          <artifactId>mahout-math</artifactId>
+          <version>0.13.0</version>
+      </dependency>
   </dependencies>
 
   <build>
     <sourceDirectory>src/main/scala</sourceDirectory>
-    <testSourceDirectory>src/test/scala</testSourceDirectory>
+    <!--<testSourceDirectory>src/test/scala</testSourceDirectory>-->
     <plugins>
       <plugin>
         <!-- see http://davidb.github.com/scala-maven-plugin -->
@@ -99,8 +104,8 @@
       </plugin>
     </plugins>
   </build>
-  <organization>
-  	<name>Dr. Krusche &amp; Partner PartG</name>
-  	<url>http://dr-kruscheundpartner.de</url>
-  </organization>
+  <!--<organization>-->
+  	<!--<name>Dr. Krusche &amp; Partner PartG</name>-->
+  	<!--<url>http://dr-kruscheundpartner.de</url>-->
+  <!--</organization>-->
 </project>
